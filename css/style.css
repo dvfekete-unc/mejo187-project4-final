@@ -1,0 +1,207 @@
+/* Global Styles */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    h1, h2 {
+        font-family: 'Oswald', sans-serif;
+    }
+
+    h1 {
+        font-size: 6em;
+        margin: 0;
+        padding: 0;
+    }
+
+    p, li {
+        font-size: 1.2em;
+        line-height: 2;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-shadow: 1px 2px black;
+    }
+
+    p {
+        margin: 50vh 0 50vh 0;
+    }
+
+    figcaption {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+/* Content-Box Styles */
+    #box-three {
+        color: white;
+    }
+
+    #box-five {
+        color: white;
+        margin-bottom: 200px;
+    }
+
+    #box-five p {
+        margin-bottom: 100px;
+    }
+
+/* Animate.style */
+    .animate__animated .animate__fadeInDown {
+        animation-duration: 2s;
+    }
+
+/* Video Styles */
+    #video {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 768px;
+
+        height: 39.375vw;
+        max-height: 432px;
+        display: block;
+    }
+
+/* Button and Modal Styles */
+    #button {
+        text-align: center;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: block;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        border: 3px solid white;
+        border-radius: 10px;
+    }
+
+    #button:hover {
+        color: rgb(35, 159, 220);
+        border: 3px solid rgb(35, 159, 220);
+        box-shadow: 0 0 5px 5px rgba(35, 159, 220, 0.3);
+    }
+
+    #modal {
+        display: block;
+        width: 100vw;
+        background-color: rgba(0,0,0,0.9);
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+        color: white;
+        z-index: 1000;
+        transform: scale(0.8);
+        border-radius: 2em;
+        transition: box-shadow 0.3s;
+        overflow: hidden;
+    }
+
+    #close {
+        margin: 30px;
+        display: flex;
+        height: 40px;
+        width: 40px;
+        border: 3px solid white;
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Goldman', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #close:hover {
+        color: rgb(35, 159, 220);
+        border-color: rgb(35, 159, 220);
+        box-shadow: 0 0 5px 5px rgba(35, 159, 220, 0.3);
+    }
+
+    #x {
+        font-family: Goldman, sans-serif;
+    }
+
+    #references {
+        padding: 50px;
+    }
+
+/* Background Styles */
+    .background {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+        transform: translateY(85%);
+        transition: transform 1s;
+    }
+
+    .surface-wrapper {
+        width: 100%;
+    }
+
+    .surface-img {
+        width: 100%;
+        display: block;
+    }
+
+    .water-gradient {
+        background-image: linear-gradient(rgb(35, 159, 220), black);
+        height: 200vh;
+    }
+
+    .rock-bottom {
+        height: 100vh;
+        background-color: black;
+    }
+
+/* Background Animation Styles */
+    body#zero .background {
+        transform: translateY(85%);
+        transition: transform 1s;
+    }
+
+    body#one .background {
+        transform: translateY(-20%);
+        transition: transform 1s;
+    }
+
+    body#two .background {
+        transform: translateY(-70%);
+        transition: transform 1s;
+    }
+
+    body#three .background {
+        transform: translateY(-120%);
+        transition: transform 1s;
+    }
+
+    body#four .background {
+        transform: translateY(-150%);
+        transition: transform 1s;
+    }
+
+    body#five .background {
+        transform: translateY(-200%);
+        transition: transform 1s;
+    }
+
+/* Mobile Styles */
+    @media screen and (max-width: 767px) {
+        p, li {
+            font-size: 1em;
+        }
+    }
