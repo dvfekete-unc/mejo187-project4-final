@@ -26,14 +26,14 @@
 // BACKGROUND
 
   // Creates array of all content boxes
-  var contentList = document.querySelectorAll(".content-box");
+  var contentList = document.querySelectorAll(".content-flex");
   // Grabs container holding all content
   var body = document.querySelector("body");
 
   var options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.01
+    threshold: 0.75
   }
 
   // entries = array = contentList

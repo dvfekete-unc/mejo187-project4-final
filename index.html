@@ -15,60 +15,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body>
+<body id="zero">
     <!-- Page content -->
-    <header>
-        <div id="box-zero" class="content-box">
-            <h1 class="animate__animated animate__fadeInDown">The Melting Antarctic</h1>
-        </div>
-    </header>
-
     <main>
-        <div id="box-one" class="content-box">
-            <p>Compared to the Arctic, Antarctica is responding less rapidly to climate change.  Water’s melting point, 0°C, is a critical threshold for rapid change in polar regions, and only a small fraction of the snow on Antarctica’s miles-high ice sheet reaches that temperature in summer.  Antarctica is also surrounded by a vast ocean, and it’s buffered by winds and weather patterns that tend to isolate it from large warm-air intrusions.  Still, the frozen continent has become warmer, and has lost billions of tons of ice as a result.  Its future responses to warming air and ocean could have worldwide consequences.</p>
+        <header>
+            <div id="box-zero" class="content-flex">
+                <h1 class="animate__animated animate__fadeInDown">The Melting Antarctic</h1>
+            </div>
+        </header>
+
+        <div id="box-one" class="content-flex">
+            <div class="content-box">
+                <p>Compared to the Arctic, Antarctica is responding less rapidly to climate change.  Water’s melting point, 0°C, is a critical threshold for rapid change in polar regions, and only a small fraction of the snow on Antarctica’s miles-high ice sheet reaches that temperature in summer.  Antarctica is also surrounded by a vast ocean, and it’s buffered by winds and weather patterns that tend to isolate it from large warm-air intrusions.  Still, the frozen continent has become warmer, and has lost billions of tons of ice as a result.  Its future responses to warming air and ocean could have worldwide consequences.</p>
+            </div>
         </div>
         
         <!-- Line graph -->
-        <div id="box-two" class="content-box animate__animated animate__fadeInDown">
-            <div class="flourish-embed flourish-chart" data-src="visualisation/4406915"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        <div id="box-two" class="content-flex">
+            <div class="content-box">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/4406915"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            </div>
         </div>
 
-        <div id="box-three" class="content-box">
-            <p>Though it’s about as far from the equator as the Arctic, and though it’s also largely frozen, Antarctica is in many ways the Arctic’s opposite. The Arctic is an ice-covered ocean basin surrounded by landmasses; Antarctica is a continent surrounded by a vast ocean. Roughly the size of the contiguous United States and Mexico combined, Antarctica extends from 60°S to the South Pole. Most of the continent lies within the Antarctic Circle, 66°33'39" south of the Equator. Geographers divide the continent into three regions: East Antarctica, West Antarctica, and the Antarctic Peninsula.</p>
+        <div id="box-three" class="content-flex">
+            <div class="content-box">
+                <p>Though it’s about as far from the equator as the Arctic, and though it’s also largely frozen, Antarctica is in many ways the Arctic’s opposite. The Arctic is an ice-covered ocean basin surrounded by landmasses; Antarctica is a continent surrounded by a vast ocean. Roughly the size of the contiguous United States and Mexico combined, Antarctica extends from 60°S to the South Pole. Most of the continent lies within the Antarctic Circle, 66°33'39" south of the Equator. Geographers divide the continent into three regions: East Antarctica, West Antarctica, and the Antarctic Peninsula.</p>
+            </div>
         </div>
 
         <!-- Video -->
-        <div id="box-four" class="content-box">
-            <figure><iframe src="https://www.youtube.com/embed/3jbMCyE3eUU?rel=0" frameborder="0" allowfullscreen id="video"></iframe></figure>
-            <figcaption>Source: NASA Climate Change</figcaption>
+        <div id="box-four" class="content-flex">
+            <div class="content-box">
+                <iframe src="https://www.youtube.com/embed/3jbMCyE3eUU?rel=0" frameborder="0" allowfullscreen id="video"></iframe>
+                <figcaption>Source: NASA Climate Change</figcaption>
+            </div>
         </div>
 
-        <div id="box-five" class="content-box">
-            <p>If temperatures rose by 4C above pre-industrial levels, which some predictions say is possible if the world fails to reduce greenhouse gas emissions quickly, then the sea level rise would be 6.5 metres from the Antarctic alone, not counting the contribution from Greenland and other glaciers.  That would be enough eventually to inundate all of the world’s coastal cities and cause devastation on a global scale.</p>
+        <div id="box-five" class="content-flex">
+            <div class="content-box">
+                <p>If temperatures rose by 4°C above pre-industrial levels, which some predictions say is possible if the world fails to reduce greenhouse gas emissions quickly, then the sea level rise would be 6.5 metres from the Antarctic alone, not counting the contribution from Greenland and other glaciers.  That would be enough eventually to inundate all of the world’s coastal cities and cause devastation on a global scale.</p>
 
-            <!-- References button -->
-            <section class="button-wrapper">
-                <button id="button">
-                    <h2>References</h2>
-                </button>
-    
-                <!-- References content -->
-                <div id="modal" style="display: none">
-                    <div id="modal-content">
-                        <!-- Close button -->
-                        <div id="close">
-                            <h2 id="x">X</h2>
-                        </div>
-    
-                        <!-- References -->
-                        <ul id="references">
-                            <li>D. N., D.-N. Yuan, C. Boening, F. W. Landerer, and M. M. Watkins (2019) JPL GRACE and GRACE-FO Mascon Ocean, Ice, and Hydrology Equivalent HDR Water Height RL06M CRI Filtered Version 2.0, Ver. 2.0, PO.DAAC, CA, USA. Dataset accessed 2020-11-19 at http://dx.doi.org/10.5067/TEMSC-3MJ62.</li>
-                            <li>Olsen, L.M., G. Major, K. Shein, J. Scialdone, S. Ritz, T. Stevens, M. Morahan, A. Aleman, R. Vogel, S. Leicester, H. Weir, M. Meaux, S. Grebas, C.Solomon, M. Holland, T. Northcutt, R. A. Restrepo, R. Bilodeau, 2013. NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version 8.0.0.0.0</li>
-                        </ul>
+                <!-- References button -->
+                <section class="button-wrapper">
+                    <button id="button">
+                        <h2>References</h2>
+                    </button>
+        
+                    <!-- References content -->
+                    <div id="modal" style="display: none">
+                        <!--<div id="modal-flex">-->
+                            <div id="modal-content">
+                                <div id="modal-header">
+                                    <!-- Close button -->
+                                    <div id="close">
+                                        <h2 id="x">X</h2>
+                                    </div>
+                                    <div id="sources-header">
+                                        <h2>Sources</h2>
+                                    </div>
+                                </div>
+                                
+            
+                                <!-- References -->
+                                <ul id="references">
+                                    <li>D. N., D.-N. Yuan, C. Boening, F. W. Landerer, and M. M. Watkins (2019) JPL GRACE and GRACE-FO Mascon Ocean, Ice, and Hydrology Equivalent HDR Water Height RL06M CRI Filtered Version 2.0, Ver. 2.0, PO.DAAC, CA, USA. Dataset accessed 2020-11-19 at http://dx.doi.org/10.5067/TEMSC-3MJ62.</li>
+                                    <li>Olsen, L.M., G. Major, K. Shein, J. Scialdone, S. Ritz, T. Stevens, M. Morahan, A. Aleman, R. Vogel, S. Leicester, H. Weir, M. Meaux, S. Grebas, C.Solomon, M. Holland, T. Northcutt, R. A. Restrepo, R. Bilodeau, 2013. NASA/Global Change Master Directory (GCMD) Earth Science Keywords. Version 8.0.0.0.0</li>
+                                </ul>
+                            </div>
+                        <!--</div>-->
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
+    
+    <!-- Heading Background -->
+    <div class="heading-bg"></div>
         
     <!-- Background -->
     <div class="background">
@@ -79,6 +100,11 @@
             <div class="water-gradient"></div>
             <div class="rock-bottom"></div>
         </div>
+    </div>
+
+    <!-- Iceberg -->
+    <div class="iceberg">
+        <div class="iceberg-wrapper"><img class="iceberg-img" src="./img/iceberg.png"></div>
     </div>
     </main>
 </body>
