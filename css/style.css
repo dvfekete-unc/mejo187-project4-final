@@ -378,6 +378,11 @@
             scroll-snap-type: none;
         }
 
+        .content-flex {
+            scroll-snap-align: none;
+            margin-top: 100px;
+        }
+
         .content-box {
             padding: 10px;
         }
